@@ -1,7 +1,10 @@
-export function greet(name = "stranger") {
-  if (name === "<YOUR-NAME>") {
-    return "Hello coach!";
+export function greet(name = "Stranger") {
+  if (Array.isArray(name)) {
+    return "Wrong input";
   }
 
+  if (name === "Martin") {
+    return `Hello Coach!`;
+  }
   return `Hello ${name}!`;
 }
